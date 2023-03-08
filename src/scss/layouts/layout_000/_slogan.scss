@@ -1,0 +1,25 @@
+
+.slogan{
+    background-color: $bgSlogan;
+    padding-top: 9px;
+    padding-bottom: 35px;
+}
+
+.slogan-box{
+    @include e(logo) {
+        display: flex;
+        justify-content: center;
+    }
+    @include e(logo-icon) {
+        width: 150px;
+        margin-bottom: 23px;
+    }
+   
+    @include e(content) {
+        font-family: Ubuntu;
+        font-size: rem(24px);
+        font-weight: 700;
+        text-align: center;
+
+    }
+}

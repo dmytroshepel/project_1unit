@@ -1,0 +1,106 @@
+
+.header-box {
+    margin-top: 6px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include e(logo) {
+        width: 54px; 
+        height: 56px;
+        margin-right: 16px;
+        order: -1;
+        
+    }
+    @include e(left) {
+        margin-right: auto;
+        display: flex;
+    }
+    @include e(title-2) {
+        display: none;
+    }
+    @include e(title) {
+        margin: 0;
+        font-family: Nunito;
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+    @include e(subtitle) {
+        font-family: Quicksand;
+        font-size: 14px;
+        font-weight: 400;
+        
+    }
+    @include e(right){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;  
+        
+    } 
+    @include e(burger-icon){
+        margin-bottom: 12px;
+        width: 28px;
+        height: 22px;
+        }
+    @include e(lang) {
+        display: flex;
+        align-items: center;
+    }    
+    @include e(lang-icon) {
+        width: 27px;
+        height: 18px;
+        margin-right: 3px;
+        
+    }
+    @include e(eng) {
+        font-family: Quicksand;
+        font-size: 1rem;
+        font-weight: 400;
+        margin-right: 5px;
+
+    }
+    @include e(check) {
+        width: 16px;
+        height: 11px;
+
+    }
+}
+
+.label {
+    display: none;
+}
+.form-cont {
+    flex: 1;
+}
+.form {
+    @include m(right) {
+        display: none;
+    }
+    margin-top: 24px;
+    margin-bottom: 22px;
+    width: 100%;
+    border: 1px solid $grey;
+    border-radius: 27px;
+    padding: 22px 35px 20px 35px;
+    position: relative;
+    &::after {
+        content: "\e901";
+        font-family: 'icomoon';
+        color: $bgBtn;
+        font-size: 20px;
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 85%;
+    }    
+    @include e(search) {
+        color: $black;
+        font-family: Quicksand;
+        font-size: 1rem;
+        position: relative;  
+        &::placeholder{
+            color: $black;
+        }
+    }
+}
+

@@ -67,3 +67,87 @@
   $prefix: if(variable-exists(prefix), #{$prefix}, "");
   #{$cssProp}: var(--#{$prefix}#{$cssVar});
 }
+
+/*mixin для для псевдоелемента before*/ 
+@mixin before($img, $w, $h) {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(#{$i}#{$img}) no-repeat;
+    width: $w;
+    height: $h;
+    @content;
+  }
+}
+
+/*mixin для для псевдоелемента after*/ 
+@mixin after($img, $w, $h) {
+  &::after{
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(#{$i}#{$img}) no-repeat;
+    width: $w;
+    height: $h;
+    @content;
+  }
+}
+
+/*функция для для конвертации px в rem*/ 
+@function rem($target) {
+  @return ($target / $baseFontSize) * 1rem;
+}    
+
+
+@mixin circle($cont) {
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%;
+  border: 1px solid $borderCol;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  @content;
+  &::before {
+       content: $cont;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%); 
+       position: absolute;
+       color: $black;
+       font-size: rem(18px);
+       font-family: Quicksand;
+       @content;
+   }
+}
+
+@mixin list($num) {
+  font-family: $baseFontFamily;
+  color: $black;
+  padding-left: 22px;
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid $borderList;
+  display: block;
+  position: relative;
+  @content;
+  &::before {
+    content: "";
+    width: 8.37px;
+    height: 9px;
+    background-color: $borderList;
+    border-radius: 50%;
+    top: 3px;
+    left: 0;
+    position: absolute;
+    
+  }
+  &::after {
+    content: $num;
+    top: 0;
+    right: 0;
+    position: absolute;
+    @content;
+  }
+}

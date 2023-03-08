@@ -1,0 +1,19 @@
+
+.slogan{
+    padding-top: 19px;
+    padding-bottom: 33px;
+    margin-bottom: 30px;
+}
+
+.slogan-box{
+    @include e(logo-icon) {
+        width: 250px;
+        margin-left: 65px;
+        margin-right: 31px;
+    }
+   
+    @include e(content) {
+        font-family: Ubuntu;
+        font-size: rem(30px);
+    }
+}

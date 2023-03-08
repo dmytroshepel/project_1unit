@@ -1,0 +1,30 @@
+
+.col-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.blog {
+    flex: 49%;
+    padding-right: 50px;
+    margin-right: auto;
+}
+.articles {
+    flex: 49%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.feedback {
+    flex: 100%;
+}
+
+.list {
+    @include e(link){
+        @include m(50) {
+            border-bottom: none;
+        }
+    }
+}
+
+
+

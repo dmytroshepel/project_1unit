@@ -1,0 +1,14 @@
+.slogan {
+    padding-top: 15px;
+    padding-bottom: 19px;
+    margin-bottom: 17px;
+}
+
+.slogan-box {
+    display: flex;
+    align-items: center;
+    @include e(logo-icon) {
+        margin-bottom: 0;
+        margin-right: 25px;
+    }
+}

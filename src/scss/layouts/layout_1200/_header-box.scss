@@ -1,0 +1,51 @@
+
+.form-cont {
+    display: none;
+}
+.form {
+    display: none;
+    @include m(right) {
+        display: initial;
+    }
+}
+
+.header-box {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    margin-top: 0;
+    padding-right: 32px;
+    @include e(title-1) {
+        display: none;
+    }
+    @include e(title-2) {
+        display: initial;
+    }
+    @include e(left) {
+        order: 1;
+        margin-right: 0;
+    }
+    @include e(right) {
+        order: 3;
+    }
+    @include e(nav) {
+        order: 2;
+    }
+    @include e(lang-icon) {
+       margin-right: 15px;     
+    }
+    @include e(eng) {
+         margin-right: 10px;
+    }
+    @include e(logo) { 
+     
+        &:hover {
+           
+            --color-red: #2B5AE1;
+            --color-blue: #E63A28;
+           
+        }
+    }
+}
+
+

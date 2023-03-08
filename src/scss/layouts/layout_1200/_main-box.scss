@@ -1,0 +1,101 @@
+
+.main-box {
+    display: flex;
+    gap: 58px;
+}
+
+.col-left {
+    flex: 0 0 64%;
+}
+
+.col-right {
+    flex: 382px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: flex-start;
+    
+} 
+.blog {
+    order: 2;
+    flex: initial;
+    width: 65%;
+    margin-right: 0;
+    margin-left: 5px;
+    padding-right: 0;
+    margin-bottom: 14px;
+    
+}
+.articles {
+    order: 4;
+    flex: initial;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 48px;
+    border: 1px solid $grey;
+    border-radius: 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $borderCol;
+    border-radius: 10px;
+    padding: 2px 5px 17px 5px;
+    margin-bottom: 34px;
+}
+.form {
+    order: 1;
+    margin-left: 0;
+    width: 380px;
+    
+}
+
+.list {
+    @include e(link){
+        @include m(50) {
+            border-bottom: 1px solid $borderList;
+        }
+        &:hover {
+            color: $bgBtn;
+        }
+        &:hover::before{
+            background-color: $blue;
+        }
+        &:hover::after{
+            color: $blue;
+        }
+    }
+}
+
+.label {
+    display: initial;
+    font-family: $baseFontFamily;
+    font-size: rem(20px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.pages {
+    margin-left: 0;
+    justify-content: center;
+    @include e(link) {
+        &:hover {
+            background-color: $borderCol;
+        }
+        &:active {
+            background-color: $bgBtn;
+        }
+        &:active::before {
+            color: $white;
+        }
+
+        @include m(active) {
+            &:hover {
+                background-color: $bgBtn;
+            }
+        }
+    }
+    
+
+}

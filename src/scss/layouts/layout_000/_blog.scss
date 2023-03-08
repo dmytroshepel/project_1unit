@@ -1,0 +1,32 @@
+
+.blog {
+    margin-bottom: 6px;
+    @include e(title) {
+        margin-bottom: 33px;
+        font-family: Ubuntu;
+        font-size: rem(20px);
+        font-weight: 700;
+    }
+}
+
+
+.list {
+    @include e(link) {
+        @include m(87) {
+            @include list("(87)");
+        }
+        @include m(12) {
+            @include list("(12)");
+        }
+        @include m(34) {
+            @include list("(34)");
+        }
+        @include m(9) {
+            @include list("(9)");
+        }
+        @include m(50) {
+            @include list("(50)");
+        }
+          
+    }
+}

@@ -1,0 +1,27 @@
+.header-box {
+    align-items: center;
+    @include e(burger) {
+        display: none;
+    }
+    @include e(right) {
+        order: 3;
+        flex-direction: initial;
+    }
+    @include e(left) {
+        order: 1;
+    }
+    @include e(nav) {
+        order: 4;
+    }
+}
+.form-cont {
+    flex: auto;
+    order: 2;
+}
+.form {
+    width: 433px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    margin-right: 4px;
+}
+

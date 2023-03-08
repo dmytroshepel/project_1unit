@@ -1,0 +1,15 @@
+.post {
+    @include e(link) {
+        &:hover {
+            color: $bgBtn;
+        }
+        &:active {
+            color: darkgrey;
+        }
+    }
+    @include e(btn-link) {
+        &:hover {
+            color: $black;
+        }
+    }
+}

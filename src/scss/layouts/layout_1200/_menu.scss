@@ -1,0 +1,12 @@
+.menu {
+    margin-left: 0px;
+    @include e(link) {
+        &:hover {
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        &:active {
+            color: $bgBtn;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+
+.container {
+    max-width: 580px;
+    @include m(header) {
+        max-width: 1200px;
+    }
+}
+
+.form-cont {
+    flex: 100%;
+}
+

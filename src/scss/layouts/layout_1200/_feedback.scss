@@ -1,0 +1,25 @@
+.feedback {
+    order: 3;
+    flex: initial;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 42px 50px 42px;
+    margin: 0 0 25px 0;
+
+    @include e(content) {
+        padding-left: 0;
+        padding-right: 0;
+        order: 2;
+        max-width: 280px;
+    }
+    @include e(img-box) {
+        order: 1;
+        width: 225px;
+    }
+    @include e(btn) {
+        &:hover {
+            color: $black;
+        }
+    }
+
+}

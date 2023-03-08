@@ -8,9 +8,196 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Index.html</h1>
+    <div class="wrapper">
+      <div class="container container_header">
+        <header class="header-box">
+         <div class="header-box__left">
+           <div class="header-box__text">
+              <h1 class="header-box__title"><span class="header-box__title-1">Doremi</span><span class="header-box__title-2">Logo</span></h1>
+              <p class="header-box__subtitle">Buy, Sell Or Rent</p>
+            </div>
+            <svg class="header-box__logo" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="i/logo.svg#logo"/>
+            </svg>
+          </div>
+          <div class="header-box__right">
+            <div class="header-box__burger">
+              <svg class="header-box__burger-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#burger"/>
+              </svg>
+            </div>
+            <div class="header-box__lang">
+              <span class="header-box__eng">Eng</span>
+              <svg class="header-box__lang-icon" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#b"/>
+              </svg>
+              <svg class="header-box__check" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="i/sprite.svg#check"/>
+              </svg>
+            </div>
+          </div>
+          <div class="form-cont">
+            <form class="form">
+              <input id="search" class="form__search" type="text" name="text" placeholder="Search...">
+            </form>
+         </div>
+          <nav class="header-box__nav">
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="">Explore</a></li>
+              <li class="menu__item"><a class="menu__link" href="">About Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Pages</a></li>
+              <li class="menu__item"><a class="menu__link menu__link_arrow" href="">Sign in or Register</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      
+      <div class="slogan">
+        <div class="container">
+          <div class="slogan-box">
+            <div class="slogan-box__logo">
+              <img class="slogan-box__logo-icon" src="i/ukraine.png" alt=""> 
+            </div>
+            <p class="slogan-box__content">Help Ukraine with the Beetroot Tech Relief Fund</p>
+          </div> 
+        </div> 
+      </div>
+
+      <div class="container">
+        <div class="main-box">
+         
+          <div class="col-left">
+            <div class="posts">
+              <artickle class="post">
+                <h2 class="post__title">How To Buy, Sell or Rent Items From Doremi</h2>
+                <ul class="post__menu">
+                    <li class="post__item"><a class="post__link" href="">Admin</a></li>
+                    <li class="post__item"><a class="post__link" href="">Rent Buy Sell</a></li>
+                    <li class="post__item"><a class="post__link" href="">56 Comments</a></li>
+                </ul>  
+                <p class="post__discription">
+                    Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
+                    amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+                <div class="post__btn">
+                    <a class="post__btn-link" href="#">read more</a> 
+                </div>          
+                <div class="post__img">
+                  <div class="post__photo-box">
+                    <picture>
+                      <source srcset="i/photo-b.png" media="(min-width: 768px)">
+                      <img class="post__photo" src="i/photo-s.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="post__date-box">
+                    <img class="post__date-icon" src="i/sep-26.png" alt="">
+                  </div>
+                </div>   
+              </artickle>
+              <artickle class="post">
+                <h2 class="post__title">How To Buy, Sell or Rent Items From Doremi</h2>
+                <ul class="post__menu">
+                    <li class="post__item"><a class="post__link" href="">Admin</a></li>
+                    <li class="post__item"><a class="post__link" href="">Rent Buy Sell</a></li>
+                    <li class="post__item"><a class="post__link" href="">56 Comments</a></li>
+                </ul>  
+                <p class="post__discription">
+                    Eiusmod temporl incididuntys labore dolore magna aliqua sed lorems ipsum dolor
+                    amet consecteur eiusmod tempor incididunt ut labore et dolor magna minim venia
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                </p>
+                <div class="post__btn">
+                    <a class="post__btn-link" href="#">read more</a> 
+                </div>          
+                <div class="post__img">
+                  <div class="post__photo-box">
+                    <picture>
+                      <source srcset="i/photo-b.png" media="(min-width: 768px)">
+                      <img class="post__photo" src="i/photo-s.png" alt="">
+                    </picture>
+                  </div>
+                  <div class="post__date-box">
+                    <img class="post__date-icon" src="i/sep-26.png" alt="">
+                  </div>
+                </div>   
+              </artickle>
+            </div>
+          <ul class="pages">
+            <li class="pages__number"><a class="pages__link pages__link_active" href=""></a></li>
+            <li class="pages__number"><a class="pages__link pages__link_two" href=""></a></li>
+            <li class="pages__number"><a class="pages__link pages__link_three" href=""></a></li> 
+            <li class="pages__number"><a class="pages__link pages__link_next" href=""></a></li>
+          </ul>
+          </div>
+          
+          <div class="col-right">
+            <div class="form-box">
+              <label class="label" for="search">Search Bog</label>
+              <form id="search"class="form form_right">
+                <input  class="form__search" type="text" name="text" placeholder="Search...">
+              </form>
+            </div>
+            <article class="blog">
+              <h3 class="blog__title">Blog Categories</h3>
+              <ul class="list">
+                <li class="list__item"><a class="list__link list__link_87" href="">Buying Items</a></li>
+                <li class="list__item"><a class="list__link list__link_12" href="">Selling Items</a></li>
+                <li class="list__item"><a class="list__link list__link_34" href="">Renting Items</a></li>
+                <li class="list__item"><a class="list__link list__link_9" href="">Promote Business</a></li>
+                <li class="list__item"><a class="list__link list__link_50" href="">Worldwide Cities</a></li>
+              </ul>
+            </article>
+            <article class="articles">
+              <h3 class="articles__title">Our Top Articles</h3>
+              <div class="article">
+                <div class="article__img-box">
+                  <img src="i/article-photo.png" alt="">
+                </div>
+                <div class="article__discription">
+                  <h4 class="article__title">How to spend up free vacations</h4> 
+                  <p class="article__subtitle">Cars, Bikes & Trucks</p>
+                </div>
+              </div> 
+              <div class="article">
+                <div class="article__img-box">
+                  <img src="i/article-photo.png" alt="">
+                </div>
+                <div class="article__discription">
+                  <h4 class="article__title">Welcome to quarantine free travel</h4> 
+                  <p class="article__subtitle">Drones, Cameras</p>
+                </div>
+              </div> 
+              <div class="article">
+                <div class="article__img-box">
+                  <img src="i/article-photo.png" alt="">
+                </div>
+                <div class="article__discription">
+                  <h4 class="article__title">10 most beautiful cities for traveling</h4> 
+                  <p class="article__subtitle">Electronic Items</p>
+                </div>
+              </div> 
+            </article>
+            <aside class="feedback">
+              <div class="feedback__content">
+                <h3 class="feedback__title">Join Us & Get Listed</h3>
+                <p class="feedback__discription">Eiusmod tempor incididunt ut labore exercitation ullamco laboris.</p>
+                <form class="feedback__form">
+                  <input class="feedback__mail" type="text" placeholder="Enter your email">
+                  <button class="feedback__btn" type="submit">subscribe</button>
+                </form>
+              </div>
+            <div class="feedback__img-box">
+              <img class="feedback__img" src="i/mail.png" alt="">
+            </div>
+            </aside>
+          </div>
+          
+        </div>
+      </div>
     </div>
+
+  
 
     <!--  JavaScript here -->
     <!-- <script src="js/app.js"></script> -->
